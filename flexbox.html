@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Responsiva com Flexbox</title>
     <style>
+
+
+
+
+
+
+
+
         body {
             margin: 0;
             padding: 0;
@@ -14,7 +22,7 @@
 
         .container {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             min-height: 100vh;/*uma altura de 100vh corresponde a 100% da página total, */
         }
 
@@ -37,9 +45,9 @@
             text-align: center;
         }
 
-        @media (min-width: 768px) {
+        @media (max-width: 768px) {
             .container {
-                flex-direction: row;
+                flex-direction: column;
                 justify-content: space-between;
             }
 
